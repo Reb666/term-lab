@@ -2,6 +2,8 @@
 
 用中文定义、可操作演示和概念对照学习技术术语。
 
+正式网站：[phtaxis.xyz](https://phtaxis.xyz)。
+
 当前包含 **前端开发 40 项 + 常见 UI 与基础交互 76 项，共 116 项**。支持分类、关键词和变体搜索、收藏、掌握进度；记录保存在当前浏览器，暂不跨设备同步。
 
 ## 本地使用
@@ -34,7 +36,7 @@ UI 分为内容与标识、页面区域、输入与选择、导航与展开、�
 
 ## Cloudflare Pages（GitHub 集成）
 
-在 Pages 中连接 `Reb666/term-lab`，设置：
+Cloudflare Pages 项目 `term-lab` 已连接 `Reb666/term-lab`，配置如下：
 
 | 配置 | 值 |
 | --- | --- |
@@ -44,7 +46,7 @@ UI 分为内容与标识、页面区域、输入与选择、导航与展开、�
 | 构建命令 | `npm run build` |
 | 输出目录 | `dist` |
 
-合入 main 后由 Pages 自动构建发布。首次迁移前的 Direct Upload 项目独立存在；最终项目地址与自定义域名以控制台激活状态为准。
+合入 main 后由 Pages 自动构建发布到 https://phtaxis.xyz。Pages 默认地址为 https://term-lab.pages.dev；根域 DNS 使用 CNAME 指向该地址。原 Direct Upload 项目 `reb-term-lab` 保留为历史部署，后续不再向它上传更新。
 
 后续使用功能分支、Conventional Commits 和 PR，合并前运行检查。不要强推 main，不提交密钥和 ZIP。详见 [贡献流程](CONTRIBUTING.md)。
 
