@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="用交互实验理解前端术语。可搜索、可收藏、可扩展的技术术语库。">
+  <title>术语实验室 · 看见技术的含义</title>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="ui-styles.css">
+  <script defer src="data.js"></script><script defer src="ui-data.js"></script>
+  <script defer src="demos.js"></script><script defer src="ui-demos.js"></script>
+  <script defer src="ui-extra-a.js"></script><script defer src="ui-extra-b.js"></script><script defer src="ui-learning.js"></script>
+  <script defer src="ui-previews.js"></script><script defer src="app.js"></script>
+  <link rel="stylesheet" href="ui-extra-a.css"><link rel="stylesheet" href="ui-extra-b.css"><link rel="stylesheet" href="ui-learning.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+<aside class="sidebar">
+  <a class="brand" href="#"><span class="brand-icon">t<span>·</span></span><span>术语实验室<small>TERM / LAB</small></span></a>
+  <div class="side-label">知识板块 <span id="domain-count">02</span></div>
+  <nav id="domains" aria-label="知识领域"></nav>
+  <div class="side-label">我的学习</div>
+  <nav class="personal" aria-label="学习筛选"><button data-view="all" class="active"><span>▦</span> 全部术语 <b id="all-count"></b></button><button data-view="saved"><span>☆</span> 我的收藏 <b id="saved-count">0</b></button><button data-view="learned"><span>✓</span> 已掌握 <b id="learned-count">0</b></button></nav>
+  <div class="side-bottom"><div class="progress-label"><span>一点一点，理解技术。</span><b id="progress-text">0%</b></div><div class="progress-track"><i id="progress-bar"></i></div><p id="progress-caption"></p><button class="text-button" id="route-button">从基础开始学习 <span>↗</span></button></div>
+  <div class="side-footer"><i></i> 你的个人技术词典 <span>v1.2</span></div>
+</aside>
+<div class="workspace">
+  <header class="topbar"><div class="breadcrumb">知识库 <span>/</span> <strong id="domain-crumb">前端开发</strong></div><div class="top-actions"><button id="motion-button" aria-pressed="false" title="减少演示动画">◉ <span>动画开启</span></button><span class="local-label">进度保存在本机</span></div></header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="page-footer"><span>TERM / LAB <b>让每一个概念，都有迹可循。</b></span><span>观察 → 动手 → 理解</span></footer>
+</div>
+<div class="toast" id="toast" role="status"></div>
+</body>
+</html>

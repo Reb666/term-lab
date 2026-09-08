@@ -1,0 +1,11 @@
+{
+  "name": "term-lab",
+  "version": "1.2.0",
+  "private": true,
+  "description": "Interactive Chinese technology terminology library",
+  "scripts": {
+    "test": "node scripts/check.cjs",
+    "build": "node scripts/build.cjs"
+  },
+  "engines": { "node": ">=20" }
+}
