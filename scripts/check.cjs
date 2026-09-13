@@ -13,7 +13,7 @@ for(const t of terms){
  assert.equal(typeof demos[t.demo],'function',`Missing demo ${t.id}`);
  assert(t.quiz.length>=3&&Number.isInteger(t.answer)&&t.answer>=0&&t.answer<t.quiz.length-1,`Invalid quiz ${t.id}`);
  for(const id of t.related)assert(ids.has(id),`${t.id}: invalid related ${id}`);
- if(['ui','effects'].includes(t.domain)){
+ if(['ui','effects','graphics'].includes(t.domain)){
   assert(t.variants?.length>=2,`Missing variants ${t.id}`);
   for(const v of t.variants)assert(v.name?.trim()&&v.description?.trim(),`Empty variant ${t.id}`);
   assert(ids.has(t.comparison?.other)&&t.comparison.difference,`Invalid comparison ${t.id}`);
