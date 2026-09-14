@@ -2,7 +2,7 @@
 
 用中文定义、可操作演示和概念对照学习技术术语。
 
-正式网站：[phtaxis.xyz](https://phtaxis.xyz)。
+正式网站：[term-lab.phtaxis.xyz](https://term-lab.phtaxis.xyz)。
 
 当前包含 **前端开发 40 项 + 常见 UI 与基础交互 76 项 + 高级 UI 视效 20 项 + 图形编程与交互场景 33 项，共 169 项**。支持分类、关键词和变体搜索、收藏、掌握进度；记录保存在当前浏览器，暂不跨设备同步。
 
@@ -52,7 +52,7 @@ Cloudflare Pages 项目 `term-lab` 已连接 `Reb666/term-lab`，配置如下：
 | 构建命令 | `npm run build` |
 | 输出目录 | `dist` |
 
-合入 main 后由 Pages 自动构建发布到 https://phtaxis.xyz。Pages 默认地址为 https://term-lab.pages.dev；根域 DNS 使用 CNAME 指向该地址。原 Direct Upload 项目 `reb-term-lab` 保留为历史部署，后续不再向它上传更新。
+合入 main 后由 Pages 自动构建发布到 https://term-lab.phtaxis.xyz。Pages 默认地址为 https://term-lab.pages.dev；在 Pages 自定义域名中绑定 `term-lab.phtaxis.xyz`，并将 `term-lab` 的 DNS CNAME 指向该地址。原 Direct Upload 项目 `reb-term-lab` 保留为历史部署，后续不再向它上传更新。
 
 后续使用功能分支、Conventional Commits 和 PR，合并前运行检查。不要强推 main，不提交密钥和 ZIP。详见 [贡献流程](CONTRIBUTING.md)。
 
